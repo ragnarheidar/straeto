@@ -64,7 +64,7 @@
             return {
                 pane: 'pane_400mloftlnatfrbist_0',
                 opacity: 1,
-                color: 'rgba(255,127,0,1.0)',
+                color: 'rgba(89,84,140,1.0)',
                 dashArray: '10,5',
                 lineCap: 'butt',
                 lineJoin: 'miter',
@@ -125,7 +125,7 @@
                 weight: 2.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(114,155,111,0.0)',
+                fillColor: 'rgba(255,127,0,0.30196078431372547)',
             }
         }
         map.createPane('pane_400mgngfjarlgtfrbist_2');
@@ -659,32 +659,6 @@
         var baseMaps = {};
         L.control.layers(baseMaps,{"Bakgrunnskort": layer_Bakgrunnskort_17,'<img src="legend/StofnleiAbistvar_16.png" /> Stofnleið A - biðstöðvar': layer_StofnleiAbistvar_16,'<img src="legend/StofnleiBbistvar_15.png" /> Stofnleið B - biðstöðvar': layer_StofnleiBbistvar_15,'<img src="legend/StofnleiCbistvar_14.png" /> Stofnleið C - biðstöðvar': layer_StofnleiCbistvar_14,'<img src="legend/StofnleiDbistvar_13.png" /> Stofnleið D - biðstöðvar': layer_StofnleiDbistvar_13,'<img src="legend/StofnleiEbistvar_12.png" /> Stofnleið E - biðstöðvar': layer_StofnleiEbistvar_12,'<img src="legend/StofnleiFbistvar_11.png" /> Stofnleið F - biðstöðvar': layer_StofnleiFbistvar_11,'<img src="legend/StofnleiGbistvar_10.png" /> Stofnleið G - biðstöðvar': layer_StofnleiGbistvar_10,'<img src="legend/StofnleiA_9.png" /> Stofnleið A': layer_StofnleiA_9,'<img src="legend/StofnleiB_8.png" /> Stofnleið B': layer_StofnleiB_8,'<img src="legend/StofnleiC_7.png" /> Stofnleið C': layer_StofnleiC_7,'<img src="legend/StofnleiD_6.png" /> Stofnleið D': layer_StofnleiD_6,'<img src="legend/StofnleiE_5.png" /> Stofnleið E': layer_StofnleiE_5,'<img src="legend/StofnleiF_4.png" /> Stofnleið F': layer_StofnleiF_4,'<img src="legend/StofnleiG_3.png" /> Stofnleið G': layer_StofnleiG_3,'<img src="legend/400mgngfjarlgtfrbist_2.png" /> 400 m göngfjarlægð útfrá biðstöð': layer_400mgngfjarlgtfrbist_2,'<img src="legend/Gnguleiirinnanvi400mfrbist_1.png" /> Gönguleiðir innan við 400 m frá biðstöð': layer_Gnguleiirinnanvi400mfrbist_1,'<img src="legend/400mloftlnatfrbist_0.png" /> 400 m loftlína útfrá biðstöð': layer_400mloftlnatfrbist_0,}).addTo(map);
         setBounds();
-        var i = 0;
-        layer_400mloftlnatfrbist_0.eachLayer(function(layer) {
-            var context = {
-                feature: layer.feature,
-                variables: {}
-            };
-            layer.bindTooltip((label_400mloftlnatfrbist_0_eval_expression(context) !== null?String('<div style="color: #ff7f00; font-size: 10pt; font-weight: bold; font-family: \'.AppleSystemUIFont\', sans-serif;">' + label_400mloftlnatfrbist_0_eval_expression(context)) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_400mloftlnatfrbist_0'});
-            labels.push(layer);
-            totalMarkers += 1;
-              layer.added = true;
-              addLabel(layer, i);
-              i++;
-        });
-        var i = 0;
-        layer_400mgngfjarlgtfrbist_2.eachLayer(function(layer) {
-            var context = {
-                feature: layer.feature,
-                variables: {}
-            };
-            layer.bindTooltip((label_400mgngfjarlgtfrbist_2_eval_expression(context) !== null?String('<div style="color: #cb4406; font-size: 10pt; font-weight: bold; font-family: \'.AppleSystemUIFont\', sans-serif;">' + label_400mgngfjarlgtfrbist_2_eval_expression(context)) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_400mgngfjarlgtfrbist_2'});
-            labels.push(layer);
-            totalMarkers += 1;
-              layer.added = true;
-              addLabel(layer, i);
-              i++;
-        });
         resetLabels([layer_400mloftlínaútfrábiðstöð_0,layer_400mgöngfjarlægðútfrábiðstöð_2]);
         map.on("zoomend", function(){
             resetLabels([layer_400mloftlínaútfrábiðstöð_0,layer_400mgöngfjarlægðútfrábiðstöð_2]);
