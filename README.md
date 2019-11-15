@@ -11,7 +11,7 @@ QGIS 3.8 + Service Area Tool  - get it [here](https://www.qgis.org/en/site/)
 
 OpenStreetMap data via Geofabrik - get it [here](https://www.geofabrik.de/data/download.html)
 
-Web2Map Plugin - get it [here](https://plugins.qgis.org/plugins/qgis2web/)
+qgis2web Plugin - get it [here](https://plugins.qgis.org/plugins/qgis2web/)
 
 Leaflet - get it [here](https://leafletjs.com/)
 
